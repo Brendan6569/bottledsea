@@ -1,19 +1,15 @@
-const menu = document.querySelector('#menu');
+const links = document.querySelectorAll('nav a');
 
-// Add a click event listener to the menu
-menu.addEventListener('click', function(e) {
-  // Prevent the default link behavior
-  e.preventDefault();
+links.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const href = link.getAttribute('href');
+    const target = document.querySelector(href);
+    const topOffset = target.offsetTop;
 
-  // Check if the clicked element is a link
-  if (e.target.tagName === 'A') {
-    // Remove the "active" class from all links
-    const links = document.querySelectorAll('#menu a');
-    links.forEach(function(link) {
-      link.classList.remove('active');
+    window.scrollTo({
+      top: topOffset,
+      behavior: 'smooth'
     });
-
-    // Add the "active" class to the clicked link
-    e.target.classList.add('active');
-  }
+  });
 });
