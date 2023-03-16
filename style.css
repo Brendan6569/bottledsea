@@ -1,92 +1,43 @@
-
-/* General styles */
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+  background-color: #0f0f0f;
+  font-family: sans-serif;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
 
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-/* Header styles */
-header {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-}
-
 nav {
+  background-color: #1a1a1a;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 nav ul {
-  display: flex;
   list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
 nav li {
-  margin: 0 10px;
+  margin-left: 2rem;
 }
 
 nav a {
-  display: block;
-  padding: 10px 20px;
-}
-
-nav a:hover,
-nav a.active {
-  background-color: #0066cc;
   color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Main styles */
-main {
-  padding-top: 80px;
+header {
+  background-image: url('wood.jpg');
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-section {
-  margin: 50px auto;
-  max-width: 800px;
-}
-
-section h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-}
-
-section p {
-  margin-bottom: 20px;
-}
-
-section ul {
-  margin-left: 20px;
-}
-
-section li {
-  margin-bottom: 10px;
-}
-
-/* Footer styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
+header
